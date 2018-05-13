@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>Alexander Junus BDes, MIDEA</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Mike Chamberlain"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="favicons/mstile-310x310.png" />
+    <style>
+        /*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+        /* Table of contents
+        ––––––––––––––––––––––––––––––––––––––––––––––––––
+        - Grid
+        - Base Styles
+        - Typography
+        - Links
+        - Buttons
+        - Forms
+        - Lists
+        - Code
+        - Tables
+        - Spacing
+        - Utilities
+        - Clearing
+        - Media Queries
+        */
+
+        /* Grid
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px 20px;
+            box-sizing: border-box;
+        }
+
+        .column,
+        .columns {
+            width: 100%;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        /* For devices larger than 400px */
+        @media (min-width: 400px) {
+            .container {
+                width: 85%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        /* For devices larger than 550px */
+        @media (min-width: 550px), print {
+            .container {
+                width: 80%;
+            }
+
+            .column,
+            .columns {
+                margin-left: 4%;
+            }
+
+            .column:first-child,
+            .columns:first-child {
+                margin-left: 0;
+            }
+
+            .one.column,
+            .one.columns {
+                width: 4.66666666667%;
+            }
+
+            .two.columns {
+                width: 13.3333333333%;
+            }
+
+            .three.columns {
+                width: 22%;
+            }
+
+            .four.columns {
+                width: 30.6666666667%;
+            }
+
+            .five.columns {
+                width: 39.3333333333%;
+            }
+
+            .six.columns {
+                width: 48%;
+            }
+
+            .seven.columns {
+                width: 56.6666666667%;
+            }
+
+            .eight.columns {
+                width: 65.3333333333%;
+            }
+
+            .nine.columns {
+                width: 74.0%;
+            }
+
+            .ten.columns {
+                width: 82.6666666667%;
+            }
+
+            .eleven.columns {
+                width: 91.3333333333%;
+            }
+
+            .twelve.columns {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .one-third.column {
+                width: 30.6666666667%;
+            }
+
+            .two-thirds.column {
+                width: 65.3333333333%;
+            }
+
+            .one-half.column {
+                width: 48%;
+            }
+
+            /* Offsets */
+            .offset-by-one.column,
+            .offset-by-one.columns {
+                margin-left: 8.66666666667%;
+            }
+
+            .offset-by-two.column,
+            .offset-by-two.columns {
+                margin-left: 17.3333333333%;
+            }
+
+            .offset-by-three.column,
+            .offset-by-three.columns {
+                margin-left: 26%;
+            }
+
+            .offset-by-four.column,
+            .offset-by-four.columns {
+                margin-left: 34.6666666667%;
+            }
+
+            .offset-by-five.column,
+            .offset-by-five.columns {
+                margin-left: 43.3333333333%;
+            }
+
+            .offset-by-six.column,
+            .offset-by-six.columns {
+                margin-left: 52%;
+            }
+
+            .offset-by-seven.column,
+            .offset-by-seven.columns {
+                margin-left: 60.6666666667%;
+            }
+
+            .offset-by-eight.column,
+            .offset-by-eight.columns {
+                margin-left: 69.3333333333%;
+            }
+
+            .offset-by-nine.column,
+            .offset-by-nine.columns {
+                margin-left: 78.0%;
+            }
+
+            .offset-by-ten.column,
+            .offset-by-ten.columns {
+                margin-left: 86.6666666667%;
+            }
+
+            .offset-by-eleven.column,
+            .offset-by-eleven.columns {
+                margin-left: 95.3333333333%;
+            }
+
+            .offset-by-one-third.column,
+            .offset-by-one-third.columns {
+                margin-left: 34.6666666667%;
+            }
+
+            .offset-by-two-thirds.column,
+            .offset-by-two-thirds.columns {
+                margin-left: 69.3333333333%;
+            }
+
+            .offset-by-one-half.column,
+            .offset-by-one-half.columns {
+                margin-left: 52%;
+            }
+
+        }
+
+        /* Base Styles
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        /* NOTE
+        html is set to 62.5% so that all the REM measurements throughout Skeleton
+        are based on 10px sizing. So basically 1.5rem = 15px :) */
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.3em; /* currently ems cause chrome bug misinterpreting rems on body element */
+            line-height: 1.6;
+            font-weight: 400;
+            font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #222;
+        }
+
+        /* Typography
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+            line-height: 1.2;
+            letter-spacing: -.1rem;
+        }
+
+        h2 {
+            margin-top: 0.7em;
+            font-size: 2.3rem;
+            letter-spacing: 0;
+        }
+
+        h3 {
+            margin-top: 0.5em;
+            font-size: 1.6rem;
+            line-height: 1.3;
+            letter-spacing: 0;
+        }
+
+        h4 {
+            font-size: 1.0em;
+            line-height: 1.35;
+            font-weight: bold;
+        }
+
+        h5 {
+            font-size: 1.8rem;
+            line-height: 1.5;
+            letter-spacing: -.05rem;
+        }
+
+        h6 {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            letter-spacing: 0;
+        }
+
+        p, ul {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .visible-md {
+            display: none;
+        }
+
+        /* Larger than phablet */
+        @media (min-width: 550px), print {
+
+            h1, h2, h3, h4, h5, h6 {
+                margin-bottom: 2.0rem;
+            }
+
+            h1 {
+                margin-bottom: 0.5rem;
+                font-size: 3.3rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            h3 {
+                margin-top: 0;
+                font-size: 1.5rem;
+            }
+
+            h4 {
+                margin-bottom: 1.0rem;
+            }
+
+            .visible-md {
+                display: block;
+            }
+        }
+
+        /* Larger than tablet */
+        @media (min-width: 750px), print {
+            h1 {
+                font-size: 4.2rem;
+            }
+        }
+
+        /* Links
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        a {
+            color: #135AA0;
+        }
+
+        a:hover {
+            color: #135AA0;
+        }
+
+        /* Lists
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        ul {
+            list-style: circle inside;
+        }
+
+        ol {
+            list-style: decimal inside;
+        }
+
+        ol, ul {
+            padding-left: 0;
+            margin-top: 0;
+        }
+
+        ul ul,
+        ul ol,
+        ol ol,
+        ol ul {
+            margin: 1.5rem 0 1.5rem 3rem;
+            font-size: 90%;
+        }
+
+        li {
+            margin-bottom: 0;
+        }
+
+        /* Code
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        code {
+            padding: .2rem .5rem;
+            margin: 0 .2rem;
+            font-size: 90%;
+            white-space: nowrap;
+            background: #F1F1F1;
+            border: 1px solid #E1E1E1;
+            border-radius: 4px;
+        }
+
+        pre > code {
+            display: block;
+            padding: 1rem 1.5rem;
+            white-space: pre;
+        }
+
+        /* Tables
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #E1E1E1;
+        }
+
+        th:first-child,
+        td:first-child {
+            padding-left: 0;
+        }
+
+        th:last-child,
+        td:last-child {
+            padding-right: 0;
+        }
+
+        /* Spacing
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        button,
+        .button {
+            margin-bottom: 1rem;
+        }
+
+        input,
+        textarea,
+        select,
+        fieldset {
+            margin-bottom: 1.5rem;
+        }
+
+        pre,
+        blockquote,
+        dl,
+        figure,
+        table,
+        p,
+        ul,
+        ol,
+        form {
+            margin-bottom: 1.5rem;;
+        }
+
+        /* Clearing
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+        /* Self Clearing Goodness */
+        .container:after,
+        .row:after,
+        .u-cf {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+    <style>
+        @page {
+            margin: 15mm 15mm;
+        }
+
+        @media print {
+            html {
+                font-size: 50%;
+            }
+
+            .container {
+                padding: 0 0 0 0;
+                width: 100%;
+            }
+
+            /* disable animations */
+            .animated {
+                animation: none !important;
+            }
+
+            header, h2, h3, h4, p, li {
+                opacity: 1 !important;
+            }
+        }
+
+        @media (min-width: 550px), print {
+            .three.columns {
+                width: 19%;
+            }
+
+            .nine.columns {
+                width: 77%;
+            }
+        }
+
+        body {
+            color: #333;
+        }
+
+        h1, h2 {
+            font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			font-weight: normal;
+        }
+
+        h1 .post-nominal {
+            white-space: nowrap;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #999;
+            border-bottom: 1px dotted #DDD;
+			text-transform: uppercase;
+        }
+
+        h3 {
+            padding-left: 0.4em;
+            border-left: 0.4em solid #eee;
+        }
+
+        .role {
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .period {
+            font-weight: normal;
+            font-size: 1.3rem;
+            color: #bbb;
+            display: block;
+            margin-top: 0.6rem;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            margin-left: 2em;
+            list-style-type: disc;
+            list-style-position: outside;
+        }
+
+        .subdued {
+            color: #bbb;
+        }
+
+        .row {
+            page-break-inside: avoid;
+        }
+
+        header, h2, h3, h4, p, li {
+            opacity: 0;
+        }
+
+        .obsolete-skill {
+            text-decoration: line-through;
+        }
+    </style>
+    <style>
+        /*!
+         * animate.css -http://daneden.me/animate
+         * Version - 3.5.1
+         * Licensed under the MIT license - http://opensource.org/licenses/MIT
+         *
+         * Copyright (c) 2016 Daniel Eden
+         */
+
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translate3d(-20px, 0, 0);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        .fadeInLeft {
+            animation-name: fadeInLeft;
+        }
+    </style>
+</head>
+
+<body class="container">
+<header>
+    <h1>Alexander Junus <span class="post-nominal">BDes, MIDEA</span></h1>
+    <a href="mailto:alexander_ju@yahoo.com">alexander_ju@yahoo.com</a> |
+	<a href="www.junusdesign.com">junusdesign.com</a> <br>
+	Australian citizen living in Sydney
+</header>
+
+<h2>Introduction</h2>
+<p>An all rounded Product Designer with eight years' UX Design experience and five years as a visual designer, holding a Bachelor Degree in Design and a Masters degree in Human-computer interaction. My capabilities are coupled with extensive working experience in a wide variety of industries including finance, health, government bodies and telecommunications.</p>
+	
+<p>I am driven by a deep sense of empathy for the user, which fuels a desire to understand and alleviate their pain points by creating the product that anticipates user needs, intuitive and delightful to use.</p>
+	
+<h2>Skills</h2>
+
+<div class="row">
+    <div class="three columns"><h3>Core skills</h3></div>
+    <div class="nine columns">
+        <p>Interaction Design, Human Computer Interaction, Heuristic Evaluation, Persuasive Design, Behavior Patterns, User Interface Design, Mobile & Multi-Channel UX, Usability Testing, High fidelity prototyping, Psychology and UX, Responsive design, Visual Design. </p>
+    </div>
+</div>
+<div class="row">
+    <div class="three columns">
+      <h3>Software skills</h3>
+    </div>
+    <div class="nine columns">
+      <p>Advanced High-fidelity prototyping in Axure, Advanced Sketch, Flinto, Advanced Photoshop, Advanced Illustrator, Advanced InDesign, Principle, Invision.
+		  <span class="subdued">Obsolete:
+                <span class="obsolete-skill">Balsamiq</span>,
+                <span class="obsolete-skill">Flash</span>,
+                <span class="obsolete-skill">OmniGraffle</span>.
+          </span>
+		</p>
+    </div>
+</div>
+<div class="row">
+    <div class="three columns"><h3>Mobile</h3></div>
+    <div class="nine columns">
+      <p>Mobile Apps Designer with extensive knowledge of Apple Human Interface Guidelines and Android Material Design guidelines.</p>
+    </div>
+</div>
+<div class="row">
+    
+</div>
+<div class="row">
+    <div class="three columns"><h3>Other skills</h3></div>
+    <div class="nine columns">
+        <p>A/B and Multivariate Testing, Analytics and User Experience, UX Mapping Methods. 
+           </p>
+    </div>
+</div>
+
+<h2>Roles</h2>
+
+
+<div class="row">
+    <div class="three columns">
+      <h3> Commonwealth Bank of Australia<span class="period">Aug 2016 - present</span></h3>
+    </div>
+    <div class="nine columns">
+      <p class="role">Senior Experience Designer </p>
+      <h4>Projects</h4>
+        <ul>
+            <li><b><a href="https://www.youtube.com/watch?v=lz6EXkkjGlE" target="new">International Pay-to-Mobile</a></b>: An easy way to send money to over 200 countries with just a mobile number from the CommBank app.
+            </li>
+            <li><b><a href="https://www.youtube.com/watch?v=THkoJzuhBLQ" target="new">CommBank Youth app.</a></b>: Designed and envision the future of CommBank Youth App.
+            </li>
+			<li><b><a href="https://www.youtube.com/watch?v=eahYRHPwDns" target="new">Parental control for Youth Debit card on the CommBank app </a></b>: Helps teach children how to manage their own money responsibility, with the safety of parental controls in CommBank app.
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="three columns visible-md">
+        &nbsp;
+    </div>
+    <div class="nine columns">
+        <h4>Role</h4>
+        <ul>
+            <li>Uncovered and analysed customer and business problems.</li>
+            <li>Created and validated hypotheses through customer research and quantitative data from surveys or analytics.</li>
+            <li>Run experiments for proof of hypothesis and efficacy of solutions.</li>
+            <li>Concept testing, utilising behavioural economics and cognitive bias study to improve design solutions.</li>
+            <li>Produced wire-flows and annotations.</li>
+			<li>Produced high fidelity interactive in Axure and Micro interaction prototypes in Flinto for user testing.</li>
+            <li>Refined various design iterations based on findings from usability testing.</li>
+			<li>Functioned as a hybrid visual designer and UX designer, balancing the disparate requirements of the two disciplines</li>
+			<li>Working with and spearheading an agile team, concurrently running ideation workshops with stakeholders. </li>
+            <li>Inspire product owners and stakeholders through a customer lens using research findings, data analytics and storytelling.</li>
+            <li>Running Axure class, providing training and coaching to junior designers.</li>
+			<li>Coaching visual designers to better understand the UX process. </li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="three columns visible-md">
+        <h3>
+            Symplicit <span class="period">Mar 2015 - Aug 2015</span></h3>
+    </div>
+    <div class="nine columns">
+        <p class="role">Senior Experience Designer</p>
+        <h4>Projects</h4>
+        <ul>
+            <li><b>Thred mobile apps</b>: A new social messaging app that aims to enhance conversations around specific pieces of content, with friends/colleagues regardless of their platform.
+            </li>
+            <li><b>Westpac 100 days on boarding</b>: A programme of work designed to personally welcome customers to Westpac.
+			</li>
+            <li><b><a href="https://www.westpac.com.au/personal-banking/home-loans/wonder/" target="new">Westpac Wonder</a></b>: A new online experience set to revolutionise the way customer view home loans.
+			</li>
+            <li><strong>Colonial First State online statement</strong>: Personalise and meaningful monthly online Superannuation statement.   
+			</li>
+			<li><strong>ANZ Smart Choice Rotor</strong>: Online application for superannuation roll over.
+			</li>
+            <li><strong>ANZ Wealth Insurance takeover</strong>: An intuitive nudge to inform the customer of their lost insurance coverage after they've completed their super funds roll over and less than five minutes for the customer to apply.  
+			</li>
+		</ul>
+    </div>
+</div>
+<div class="row">
+    <div class="three columns visible-md">
+        &nbsp;
+    </div>
+    <div class="nine columns">
+        <h4>Role</h4>
+        <ul>
+            <li>Brainstorming sessions with stakeholders in workshops to identify requirements.
+            </li>
+            <li>Produced wireframes and high fidelity interactive prototypes.</li>
+            <li>Working in an agile team and trained by an agile coach.</li>
+            <li>Worked closely with the CX Brand & Visual Design Lead in the bank to discuss UX flow and design patterns to improve the GEL (Global experience language) library.</li>
+			<li>Worked with the Business Analyst and product owner as well as presenting findings and ideas to stakeholders and director.</li>
+			<li>Conducted user interviews and card sorting exercises to understand users' mental model.</li>
+			<li>Conducted usability testing.</li>
+			<li>Responsible solely for the design direction, visual language, design style, UI library and interaction pattern for mobile Apps.</li>
+			<li>Running Axure class, providing training and coaching junior designers.</li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="three columns visible-md">
+        &nbsp;
+    </div>
+</div>
+<div class="row">
+    <div class="three columns">
+        <h3>The Friendly Agency <span class="period">OCT 2013 - Feb 2015</span></h3>
+    </div>
+    <div class="nine columns">
+        <p class="role">Senior Interactive Designer </p>
+
+        <h4>Projects</h4>
+        <ul>
+            <li><b><a href="https://theblueroom.bupa.com.au" target="new">Bupa Blue room</a></b>: Bupa blue room project aims to create content and a customer experience via a digital solution that engages with customers through the lens of the key life events.
+            </li>
+            <li><b>Bupa Visa Medical Services</b></li>	
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="three columns visible-md">
+        &nbsp;
+    </div>
+    <div class="nine columns">
+        <h4>Role</h4>
+        <ul>
+           
+			<li>Produced high fidelity interactive prototypes for user testing across multiple devices (desktop, mobile and tablet). 
+            </li>
+            <li>Ensured design development adhered to client’s brand guidelines across multiple channels.
+            </li>
+            <li>Documented business and interaction rules.</li>
+			<li>Produced wireframes and high fidelity interactive prototypes for user testing across multiple devices (desktop, mobile and tablet). Experienced in both responsive and adaptive design.
+			</li>
+			<li>Participated in usability testing to identify key findings.</li>	
+			<li>Translated wireframes and briefs into visual design.</li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="three columns visible-md">
+        &nbsp;
+    </div>
+</div>
+<div class="row">
+    <div class="three columns"><h3>
+        Salmat <span class="period">Apr 2011 - Oct 2013</span></h3>
+	</div>
+        <div class="nine columns">
+        <p class="role">User Interface Designer </p>
+
+        <h4>Clients</h4>
+        <ul>
+            <li>Optus, Sony, Commonwealth Bank, Telstra, AFL, NRL, Horse Racing Network, 
+BankWest, Myer, Aptira, WA Today, Bigpond Sports Olympics Events. </li>
+        </ul>
+        </div>
+<div class="row">
+    <div class="three columns visible-md">
+        &nbsp;
+    </div>
+    <div class="nine columns">
+        <h4>Role</h4>
+        <ul>
+           
+			<li>Construction of designs based on usability perspectives and enhanced user Interaction and at the same time dynamically involved in creating wireframes, users scenarios and personas.</li>
+
+			<li>Provided visual designs to enhance digital interaction for websites and touchscreen-based interaction.</li>
+
+			<li>Produced promotional materials, prints, posters, booklet designs, reports.</li>
+	
+        </ul>
+    </div>
+</div>	
+	
+</div>
+<div class="row">
+    <div class="three columns"><h3>
+        Bienalto <span class="period">Jan 2010 - Apr 2011</span></h3>
+    </div>
+    <div class="nine columns">
+        <p class="role">User Interface Designer</p>
+        <p> Highly adept in the technical production of wireframes for enhanced online experiences based on business contexts, users/customers behaviour and a thorough human-centred design framework. Lead for translating wireframes into online interface designs, infographics, online form designs.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="three columns"><h3>
+        University of Sydney <span class="period">Jun 2008 - Dec 2009</span></h3></div>
+    <div class="nine columns">
+        <p class="role">User Interface Designer<span style="font-weight:normal;"> (Freelance)</span></p>
+        <p>Involved in a touchscreen interface design project installed across the campus to allow interaction among students within the university compound. This was achieved via competitive game designs, the voting system and online bulletin that encouraged students to express their opinions on various subjects in vogue. It had been developed with the practical function of viewing the availability of computers in the labs via data visualisation application called "Heatmap". Heat map also enabled students to observe the activity level of each computer across three weeks period easily and intuitively.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="three columns"><h3>
+        Maha Bodhi Monastery<span class="period">Jul 2007 - Jun 2008 <br>Singapore</span></h3></div>
+    <div class="nine columns">
+        <p class="role">Graphic Designer </p>
+        <p>Spearheaded creative art direction and creating tools of brand recognition across all platforms such as logos, web design, photography, promotional materials, event banners, appraisal publications for antiques and organization of gallery collection.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="three columns"><h3>
+        Scallywags <span class="period">Jul 2006 - Jun 2007 <br>Melbourne</span></h3></div>
+    <div class="nine columns">
+        <p class="role">Graphic Designer </p>
+        <p>Designed Illustrative vector drawings for seasonal pattern and packaging for socks apparel. Appointed representative liaison in charge of overseas supplier mechanics and customer relations.</p>
+    </div>
+</div>
+	
+<div class="row">
+    <div class="three columns"><h3>
+        Studio 131 <span class="period">Jul 2005 - Jun 2006 <br>Melbourne</span></h3></div>
+    <div class="nine columns">
+        <p class="role">Graphic Designer </p>
+        <p>Multi-faceted logo design, Promotional/branding products and print publication layout development.</p>
+    </div>
+</div>	
+
+<h2>Education &amp; Qualifications</h2>
+
+<div class="row">
+    <div class="three columns">
+        <h3>University of Sydney
+            <span class="period">2008 - 2009</span></h3>
+    </div>
+    <div class="nine columns">
+        <p><b>Master of IDEA </b><br>
+		(University of Sydney Dean’s List of Excellence in Academic Performance 2008)</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="three columns">
+      <h3>Monash University <span class="period">2003 - 2005</span></h3>
+    </div>
+    <div class="nine columns">
+        <p><b>Bachelor of Design</b> </p>
+    </div>
+</div>
+
+
+</body>
+
+<script>
+    var delta = 25;
+    var delay = 0;
+    var elements = Array.prototype.slice.call(document.querySelectorAll('header, h2, h3, h4, p, li'));
+    elements.forEach(function (elem) {
+        elem.className += ' animated';
+        setTimeout(function () {
+            elem.className += ' fadeInLeft';
+        }, delay);
+        delay += delta;
+    });
+</script>
+
+</html>
+<!-- thank you Honson for proof reading! -->
