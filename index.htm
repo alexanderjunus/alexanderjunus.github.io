@@ -564,6 +564,46 @@
             margin-top: 2.4rem;
         }
 
+
+        /* Slim sticky contact bar, appears after scrolling past the header */
+        .contact-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.97);
+            border-bottom: 1px solid #E1E1E1;
+            padding: 0.6rem 1.5rem;
+            text-align: center;
+            font-size: 1.3rem;
+            z-index: 100;
+            transform: translateY(-100%);
+            visibility: hidden;
+            transition: transform 0.25s ease, visibility 0.25s;
+        }
+
+        .contact-bar.visible {
+            transform: translateY(0);
+            visibility: visible;
+        }
+
+        .contact-bar a {
+            color: #135AA0;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-bar .bar-sep {
+            color: #bbb;
+            margin: 0 0.8rem;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .contact-bar {
+                transition: none;
+            }
+        }
+
         .row.skills {
             margin-top: 0;
         }
@@ -588,6 +628,10 @@
 
             .row:has(h3) {
                 margin-top: 0;
+            }
+
+            .contact-bar {
+                display: none;
             }
         }
     </style>
@@ -707,6 +751,7 @@
 </head>
 
 <body class="container">
+<nav class="contact-bar" id="contactBar" aria-label="Contact"><a href="mailto:alexander_ju@yahoo.com">alexander_ju@yahoo.com</a><span class="bar-sep">|</span><a href="https://junusdesign.com" target="new">junusdesign.com</a></nav>
 <header>
     <h1>Alexander Junus <span class="post-nominal">BDes, MIDEA</span></h1>
     <b><a href="mailto:alexander_ju@yahoo.com">alexander_ju@yahoo.com</a></b> |
@@ -1113,6 +1158,17 @@
             elem.className += ' fadeInLeft';
         }, delay);
         delay += delta;
+    });
+
+    var contactBar = document.getElementById('contactBar');
+    var pageHeader = document.querySelector('header');
+    window.addEventListener('scroll', function () {
+        var headerBottom = pageHeader.offsetTop + pageHeader.offsetHeight;
+        if (window.pageYOffset > headerBottom) {
+            contactBar.className = 'contact-bar visible';
+        } else {
+            contactBar.className = 'contact-bar';
+        }
     });
 </script>
 
