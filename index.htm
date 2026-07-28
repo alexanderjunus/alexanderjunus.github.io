@@ -613,25 +613,29 @@
             body {
                 font-size: 1.3em;
             }
-
             h3 {
                 font-size: 1.5rem;
             }
-
             .role {
                 font-size: 1.5rem;
             }
-
             li {
                 margin-bottom: 0;
             }
-
             .row:has(h3) {
                 margin-top: 0;
             }
-
             .contact-bar {
                 display: none;
+            }
+            .row {
+                page-break-inside: auto;
+            }
+            li, p {
+                page-break-inside: avoid;
+            }
+            h2, h3, h4 {
+                page-break-after: avoid;
             }
         }
     </style>
